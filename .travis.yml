@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "8.0"
+install:
+  - npm install
+script:
+  - gulp
+  - npm run webpackdev
+after_success:
+  - bash deploy.sh
